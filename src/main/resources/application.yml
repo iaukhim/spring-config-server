@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: 'git@github.com:iaukhim/config-server-sources.git'
+          uri: 'https://github.com/iaukhim/config-server-sources.git'
   security:
     basic:
       enable: true
