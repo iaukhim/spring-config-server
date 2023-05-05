@@ -1,11 +1,20 @@
 server:
   port: 8888
+  ssl:
+    enabled: true
+    client-auth: need
+    key-store: '/certificates/config-server-keystr.p12'
+    key-store-password: password
+    key-store-type: PKCS12
+    trust-store: '/certificates/config-server-truststr.p12'
+    trust-store-password: password
+    trust-store-type: PKCS12
 spring:
   cloud:
     config:
       server:
         git:
-          uri: 'https://github.com/iaukhim/config-server-sources.git'
+          uri: 'git@github.com:iaukhim/config-server-sources.git'
   security:
     basic:
       enable: true
@@ -14,7 +23,16 @@ spring:
       password: 'admin'
 encrypt:
   keyStore:
-    location: classpath:/config-server.jks
+    location: file:/certificates/config-server.jks
     password: 123456
     alias: config-server-key
     secret: 123456
+management:
+  server:
+    port: 8989
+    ssl:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: health
