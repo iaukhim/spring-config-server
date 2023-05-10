@@ -4,10 +4,10 @@ server:
     enabled: true
     client-auth: need
     key-store: '/certificates/config-server-keystr.p12'
-    key-store-password: password
+    key-store-password: '{cipher}AQBSPc9dBMILNbb4fkRxAKZb5HsbldNIr+l+Pzl7m+n/ZI4xj8memEspGTTX7l1iNsWY34QKcXEbpPEn7nHQKDseevwkrrc+YxVD7p5zRr8oodFveqYgYng9EolXLNLEaVaIQYMD4xtqMYylwLBtj6JSS+Z23HZsMzkBRhQofxQMZUCwaiMIFjl8KWgRXJ+TkiK5cM3NqLbTD30dLbEYuyAWfsmnaTE4ikDPoccXtm0yh07m7IrU4GgHC+fh6/parYq9t+NvkouUtedTKp5v4QpjboTsGBskP4DM6eij1SiNKn6rquuEjYGVgzfxRDLtlaQMHhHL8hDfu1CvExUfqyCXrQE7qqKsAm4VTBV5XpB7xSZknJOwj4jURlUtrOUB/rc='
     key-store-type: PKCS12
     trust-store: '/certificates/config-server-truststr.p12'
-    trust-store-password: password
+    trust-store-password: '{cipher}AQBSPc9dBMILNbb4fkRxAKZb5HsbldNIr+l+Pzl7m+n/ZI4xj8memEspGTTX7l1iNsWY34QKcXEbpPEn7nHQKDseevwkrrc+YxVD7p5zRr8oodFveqYgYng9EolXLNLEaVaIQYMD4xtqMYylwLBtj6JSS+Z23HZsMzkBRhQofxQMZUCwaiMIFjl8KWgRXJ+TkiK5cM3NqLbTD30dLbEYuyAWfsmnaTE4ikDPoccXtm0yh07m7IrU4GgHC+fh6/parYq9t+NvkouUtedTKp5v4QpjboTsGBskP4DM6eij1SiNKn6rquuEjYGVgzfxRDLtlaQMHhHL8hDfu1CvExUfqyCXrQE7qqKsAm4VTBV5XpB7xSZknJOwj4jURlUtrOUB/rc='
     trust-store-type: PKCS12
 spring:
   cloud:
@@ -19,14 +19,14 @@ spring:
     basic:
       enable: true
     user:
-      name: 'admin'
-      password: 'admin'
+      name: '{cipher}AQAedRV/bocO63cx2kn5Ul+1po1afiA30wkYRHeaTskQrmvGOp6WbkiD1zv0vwhlfOPSg5fJ0NEkWtsLR814J6lADooHofq7ITBVac+2vG5/Zu9HRyf6ppKKVjztUMGRI8OfbbPP7Lecy9xP2ycrXc4VrAkckPrQEsCJWnmHdxVe6Fz5BIPdUq40tgmvRbk6FXy0AftLzsXnQ+S2fDpzYIR1FLaH6PgpraRtT8sjEyoET+MTQ/Csgq1xaJtVTC4eydKPfKJgWLbeNHJoDubd+6W3gPb5b8regkPRx0FTtUo7APdcIBob9NbW5APexXf+5cXCJTct5VpLFFEvOoyke4j52hzZX2x7BuX7wMh5K+Z8h67K976HdloCJmYrJsOXS6o='
+      password: '{cipher}AQAedRV/bocO63cx2kn5Ul+1po1afiA30wkYRHeaTskQrmvGOp6WbkiD1zv0vwhlfOPSg5fJ0NEkWtsLR814J6lADooHofq7ITBVac+2vG5/Zu9HRyf6ppKKVjztUMGRI8OfbbPP7Lecy9xP2ycrXc4VrAkckPrQEsCJWnmHdxVe6Fz5BIPdUq40tgmvRbk6FXy0AftLzsXnQ+S2fDpzYIR1FLaH6PgpraRtT8sjEyoET+MTQ/Csgq1xaJtVTC4eydKPfKJgWLbeNHJoDubd+6W3gPb5b8regkPRx0FTtUo7APdcIBob9NbW5APexXf+5cXCJTct5VpLFFEvOoyke4j52hzZX2x7BuX7wMh5K+Z8h67K976HdloCJmYrJsOXS6o='
 encrypt:
   keyStore:
     location: file:/certificates/config-server.jks
-    password: 123456
+    password: '{cipher}AQBw7JaGUaYm4HmrNB9iT8yraCS8Rri1kH2qdhQWB6ftggKfMzu88OkOaZRL5SPWb5Eyxs+/7Go2RJ12N727s/BqmLQfp3knbkRRokCh5eHNv7dB711TJdunbIwPq08hvgwM6gPdqw1HK2PXKtAZCAK8a00WQKhzn6aDuscWXtUuoO6bcdJ5qd0BbW0Om8ODF2Eb3kzzTuwvgrXiJ8DjSlJT35YcOs3MJWqhsv1m9tRlqAVcZBw5YhhhTYZUOJx7VBmgodkzeT7pb/UKKHYTEICSaJLJEFDfuoJGtMF5cxFQLuDieIfdBd8eCvrvWL/DWlGRUtNIj7tTrOwV5dJ6xUQv/JuDWpV4Ew2wz7Z1InV02JSvrm2LEyQLs4+y0H3aCNQ='
     alias: config-server-key
-    secret: 123456
+    secret: '{cipher}AQBw7JaGUaYm4HmrNB9iT8yraCS8Rri1kH2qdhQWB6ftggKfMzu88OkOaZRL5SPWb5Eyxs+/7Go2RJ12N727s/BqmLQfp3knbkRRokCh5eHNv7dB711TJdunbIwPq08hvgwM6gPdqw1HK2PXKtAZCAK8a00WQKhzn6aDuscWXtUuoO6bcdJ5qd0BbW0Om8ODF2Eb3kzzTuwvgrXiJ8DjSlJT35YcOs3MJWqhsv1m9tRlqAVcZBw5YhhhTYZUOJx7VBmgodkzeT7pb/UKKHYTEICSaJLJEFDfuoJGtMF5cxFQLuDieIfdBd8eCvrvWL/DWlGRUtNIj7tTrOwV5dJ6xUQv/JuDWpV4Ew2wz7Z1InV02JSvrm2LEyQLs4+y0H3aCNQ='
 management:
   server:
     port: 8989
