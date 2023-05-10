@@ -24,9 +24,9 @@ spring:
 encrypt:
   keyStore:
     location: file:/certificates/config-server.jks
-    password: '{cipher}AQBw7JaGUaYm4HmrNB9iT8yraCS8Rri1kH2qdhQWB6ftggKfMzu88OkOaZRL5SPWb5Eyxs+/7Go2RJ12N727s/BqmLQfp3knbkRRokCh5eHNv7dB711TJdunbIwPq08hvgwM6gPdqw1HK2PXKtAZCAK8a00WQKhzn6aDuscWXtUuoO6bcdJ5qd0BbW0Om8ODF2Eb3kzzTuwvgrXiJ8DjSlJT35YcOs3MJWqhsv1m9tRlqAVcZBw5YhhhTYZUOJx7VBmgodkzeT7pb/UKKHYTEICSaJLJEFDfuoJGtMF5cxFQLuDieIfdBd8eCvrvWL/DWlGRUtNIj7tTrOwV5dJ6xUQv/JuDWpV4Ew2wz7Z1InV02JSvrm2LEyQLs4+y0H3aCNQ='
+    password: 123456
     alias: config-server-key
-    secret: '{cipher}AQBw7JaGUaYm4HmrNB9iT8yraCS8Rri1kH2qdhQWB6ftggKfMzu88OkOaZRL5SPWb5Eyxs+/7Go2RJ12N727s/BqmLQfp3knbkRRokCh5eHNv7dB711TJdunbIwPq08hvgwM6gPdqw1HK2PXKtAZCAK8a00WQKhzn6aDuscWXtUuoO6bcdJ5qd0BbW0Om8ODF2Eb3kzzTuwvgrXiJ8DjSlJT35YcOs3MJWqhsv1m9tRlqAVcZBw5YhhhTYZUOJx7VBmgodkzeT7pb/UKKHYTEICSaJLJEFDfuoJGtMF5cxFQLuDieIfdBd8eCvrvWL/DWlGRUtNIj7tTrOwV5dJ6xUQv/JuDWpV4Ew2wz7Z1InV02JSvrm2LEyQLs4+y0H3aCNQ='
+    secret: 123456
 management:
   server:
     port: 8989
